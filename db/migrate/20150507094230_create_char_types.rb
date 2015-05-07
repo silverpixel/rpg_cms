@@ -4,7 +4,7 @@ class CreateCharTypes < ActiveRecord::Migration
       t.integer "user_id"
       t.string "name", :limit => 20
       # Carrierwave gem - obavezni edit
-      t.blob "avatar"
+      #t.blob "avatar"
       t.timestamps
     end
     add_index("char_types", "user_id")

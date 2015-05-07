@@ -5,7 +5,7 @@ class CreateCharAttrs < ActiveRecord::Migration
       t.string "att_name", :limit => 15
       t.integer "value"
       # Carrierwave gem - obavezni edit
-      t.blob "att_icon"
+      #t.blob "att_icon"
       t.timestamps
     end
     add_index("char_attrs", "char_type_id")
