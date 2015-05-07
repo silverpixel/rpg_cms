@@ -1,15 +1,12 @@
 class CreateCharTypes < ActiveRecord::Migration
-  def up
+  def change
     create_table :char_types do |t|
+      t.integer "user_id"
       t.string "name", :limit => 20
       # Carrierwave gem - obavezni edit
       t.blob "avatar"
       t.timestamps
     end
+    add_index("char_types", "user_id")
   end
-
-  def down
-  	drop_table :char_types
-  end
-
 end
