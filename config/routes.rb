@@ -1,7 +1,14 @@
 RpgCms::Application.routes.draw do
+  devise_for :users
+  # get "character_type/index"
+  # get "character_type/show"
+  # get "character_type/new"
+  # get "character_type/edit"
+  # get "character_type/delete"
+  
   #get "rpg/character_type"
   root "rpg#character_type"
-  match ':controller(/:action(/:id))', :via => :get
+  match ':controller(/:action)', :via => :get
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

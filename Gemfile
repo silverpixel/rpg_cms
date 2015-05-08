@@ -18,6 +18,9 @@ gem 'pg'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use Devise for user authentification
+gem 'devise', '~> 3.4.1'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -33,7 +36,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
