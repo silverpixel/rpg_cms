@@ -1,5 +1,5 @@
 class RpgController < ApplicationController
-	layout false
+	#layout false
   def character_type
   end
 
